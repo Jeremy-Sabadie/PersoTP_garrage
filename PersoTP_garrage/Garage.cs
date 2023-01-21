@@ -2,8 +2,13 @@
 {
     internal class Garage : Entreprise)
     {
-        List<Véhicule> Véhicules;
-        List<Garagist> garagist;
+        Garage(string name, int siretNumber) : base(name, siretNumber)
+        {
+            string Name = name;
+            int SiretNumber = siretNumber;
+        }
+        private List<Véhicule> Véhicules { get; set; }
+        private List<Garagist> garagist { get; set; }
 
     }
 }
