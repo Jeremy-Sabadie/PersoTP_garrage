@@ -1,5 +1,5 @@
 ﻿namespace PersoTP_garrage;
 
-internal class Truck
+internal class Truck : Véhicule()
 {
 }

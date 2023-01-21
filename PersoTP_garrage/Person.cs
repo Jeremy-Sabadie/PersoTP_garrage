@@ -8,7 +8,7 @@ internal class Person
         FirstName = firstName;
         Age = age;
     }
-
+    //Attributs:
     private string Name { get; set; }
     private string FirstName { get; set; }
     private int Age { get; set; }
