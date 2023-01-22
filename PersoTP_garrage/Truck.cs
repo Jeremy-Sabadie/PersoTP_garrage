@@ -1,12 +1,21 @@
 ﻿namespace PersoTP_garrage;
 
-internal class Truck : Véhicule
+internal class Truck : Vehicule
 {
-    Truck(string brand, string model, int registration, int damage) : base(brand, model, registration, damage)
+    string Brand;
+    string Model;
+    string Registration;
+    int Damage;
+    Garagist garagist;
+    Truck(string brand, string model, string registration, int damage) : base(brand, model, registration, damage)
     {
-        string Brand = brand;
-        string Model = model;
-        int Registration = registration;
-        int Damage = damage;
+
+    }
+    public override double ReparationTime(Garagist g)
+    {
+        double Time = 2 * Damage * (g.Skills / 100);
+        return Time;
     }
 }
+
+
